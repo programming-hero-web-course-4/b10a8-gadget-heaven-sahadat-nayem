@@ -1,0 +1,204 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Apple iPhone 14",
+      "product_image": "https://i.ibb.co.com/4YHds94/i-Phone14pricein-Bangladesh.webp",
+      "category": "Mobile",
+      "price": "$799",
+      "description": "The latest iPhone with A15 Bionic chip and advanced camera system.",
+      "specification": {
+        "screen_size": "6.1 inches",
+        "processor": "A15 Bionic",
+        "ram": "4GB",
+        "storage": "128GB",
+        "battery": "3279 mAh"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 2,
+      "product_title": "Samsung Galaxy S23",
+      "product_image": "https://i.ibb.co.com/XZZ1D88/samsung-galaxy-s23-ultra.jpg",
+      "category": "Mobile",
+      "price": "$999",
+      "description": "A premium smartphone with Snapdragon 8 Gen 2 processor and stunning display.",
+      "specification": {
+        "screen_size": "6.8 inches",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "8GB",
+        "storage": "256GB",
+        "battery": "5000 mAh"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 3,
+      "product_title": "Google Pixel 7",
+      "product_image": "https://i.ibb.co.com/BB7Mg10/Hero-Image-Thumbnail-width-1000-format-webp.webp",
+      "category": "Mobile",
+      "price": "$699",
+      "description": "Google's flagship with advanced AI capabilities and excellent camera.",
+      "specification": {
+        "screen_size": "6.3 inches",
+        "processor": "Google Tensor G2",
+        "ram": "8GB",
+        "storage": "128GB",
+        "battery": "4355 mAh"
+      },
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": 4,
+      "product_title": "OnePlus 11",
+      "product_image": "https://i.ibb.co.com/gPRMMYz/One-Plus-11-2-9787.jpg",
+      "category": "Mobile",
+      "price": "$749",
+      "description": "A high-performance smartphone with fast charging and a smooth display.",
+      "specification": {
+        "screen_size": "6.7 inches",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12GB",
+        "storage": "256GB",
+        "battery": "5000 mAh"
+      },
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 5,
+      "product_title": "Xiaomi 13 Pro",
+      "product_image": "https://i.ibb.co.com/BybpJkn/download.jpg",
+      "category": "Mobile",
+      "price": "$899",
+      "description": "A flagship phone with Leica camera system and powerful performance.",
+      "specification": {
+        "screen_size": "6.73 inches",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12GB",
+        "storage": "256GB",
+        "battery": "4820 mAh"
+      },
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": 6,
+      "product_title": "Sony Xperia 5 IV",
+      "product_image": "https://i.ibb.co.com/7WKNd3b/images.jpg",
+      "category": "Mobile",
+      "price": "$999",
+      "description": "A compact flagship with advanced camera technology and smooth performance.",
+      "specification": {
+        "screen_size": "6.1 inches",
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8GB",
+        "storage": "128GB",
+        "battery": "5000 mAh"
+      },
+      "availability": false,
+      "rating": 4.3
+    },
+    {
+      "product_id": 7,
+      "product_title": "Apple Watch Series 9",
+      "product_image": "https://i.ibb.co.com/wMTFS4p/download.jpg",
+      "category": "Smartwatch",
+      "price": "$399",
+      "description": "An advanced smartwatch with health tracking and GPS.",
+      "specification": {
+        "display": "Retina",
+        "battery_life": "18 hours",
+        "water_resistance": "50m",
+        "features": ["Heart Rate Monitor", "ECG", "GPS"]
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 8,
+      "product_title": "Samsung Galaxy Watch 6",
+      "product_image": "https://i.ibb.co.com/QDBSW1Q/download.jpg",
+      "category": "Smartwatch",
+      "price": "$349",
+      "description": "A versatile smartwatch with sleep tracking and fitness features.",
+      "specification": {
+        "display": "Super AMOLED",
+        "battery_life": "40 hours",
+        "water_resistance": "50m",
+        "features": ["Heart Rate Monitor", "Sleep Tracking", "GPS"]
+      },
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 9,
+      "product_title": "Garmin Forerunner 265",
+      "product_image": "https://i.ibb.co.com/PthMYKZ/images.jpg",
+      "category": "Smartwatch",
+      "price": "$449",
+      "description": "A GPS smartwatch designed for runners and athletes.",
+      "specification": {
+        "display": "MIP",
+        "battery_life": "15 days",
+        "water_resistance": "50m",
+        "features": ["Heart Rate Monitor", "GPS", "VO2 Max"]
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 10,
+      "product_title": "Apple MacBook Air M2",
+      "product_image": "https://i.ibb.co.com/SmKDKkY/images-1.jpg",
+      "category": "Laptop",
+      "price": "$1199",
+      "description": "The sleek and powerful MacBook Air with M2 chip for ultimate performance.",
+      "specification": {
+        "screen_size": "13.6 inches",
+        "processor": "Apple M2",
+        "ram": "8GB",
+        "storage": "256GB",
+        "battery_life": "18 hours"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 11,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/xD1Nnbd/download-1.jpg",
+      "category": "Laptop",
+      "price": "$1299",
+      "description": "A powerful and compact laptop with Intel Core i7 processor.",
+      "specification": {
+        "screen_size": "13.4 inches",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "512GB",
+        "battery_life": "12 hours"
+      },
+      "availability": false,
+      "rating": 4.4
+    },
+    {
+      "product_id": 12,
+      "product_title": "Lenovo Yoga 9i",
+      "product_image": "https://i.ibb.co.com/H2mM17q/download-2.jpg",
+      "category": "Laptop",
+      "price": "$1499",
+      "description": "A premium convertible laptop with Intel Core i7 processor and high-resolution display.",
+      "specification": {
+        "screen_size": "14 inches",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "1TB",
+        "battery_life": "14 hours"
+      },
+      "availability": true,
+      "rating": 4.8
+    }
+  ]
+  
