@@ -1,22 +1,23 @@
-import { useEffect, useState } from "react";
 
 
-const Gatgets = () => {
+const Gadgets = ({object}) => {
 
-    const [gadgets, setGadgets] = useState([]);
-
-    useEffect( () =>{
-        fetch('./gadgetsData.json')
-        .then(res => res.json())
-        .then(data => setGadgets(data))
-    }, [])
+    const {product_title, product_image, price} = object;
 
     return (
-        <div>
-            <h2 className='text-4xl font-bold text-center'>Explore Cutting-Edge Gadgets</h2>
-            <p>{gadgets.length}</p>
+        <div className="card bg-base-100 shadow-xl ">
+            <figure className="px-10 pt-10">
+                <img src={product_image} alt="gadget" className="rounded-xl" />
+            </figure>
+            <div className="card-body ">
+                <h2 className="card-title">{product_title}</h2>
+                <p>Price:{price}</p>
+                <button className="btn rounded-2xl mx-auto w-40 hover:bg-[#9538E2] hover:text-white">
+                    View Details
+                </button>
+            </div>
         </div>
     );
 };
 
-export default Gatgets;
+export default Gadgets;
