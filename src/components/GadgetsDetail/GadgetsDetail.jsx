@@ -1,18 +1,30 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { addFavorite} from "../utils/localStroge";
+import { useState } from "react";
 
 
 const GadgetsDetail = () => {
 
     const {product_id} = useParams();
     const id = parseInt(product_id);
-    
+
     const data = useLoaderData();
 
     const gadget = data.find(gadget => gadget.product_id === id)
+
     
     const {product_title, product_image, specification, price, description, rating} = gadget
+
+
+    const [isFavorite, setIsFavorite] = useState(false)
+    
+
+    const handleFavorite = gadget =>{
+        addFavorite(gadget)
+        setIsFavorite(true)
+    }
 
     return (
         <>
@@ -52,7 +64,7 @@ const GadgetsDetail = () => {
                 </div>
                 </div>
                     <div>
-                        <button className="btn bg-[#9538E2] text-white hover:text-black mt-3">Add To Card <FaShoppingCart /></button>
+                        <button disabled={isFavorite} onClick={() => handleFavorite(gadget)} className="btn bg-[#9538E2] text-white hover:text-black mt-3">Add To Card <FaShoppingCart /></button>
                         <button className="btn ml-3 rounded-full hover:bg-[#9538E2] hover:text-white"><FaHeart /></button>
                     </div>
                 </div>
