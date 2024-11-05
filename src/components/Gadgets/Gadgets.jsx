@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 const Gadgets = ({object}) => {
 
-    const {product_title, product_image, price} = object;
+    const { product_id, product_title, product_image, price} = object;
 
     return (
         <div className="card bg-base-100 shadow-xl ">
@@ -12,9 +13,11 @@ const Gadgets = ({object}) => {
             <div className="card-body ">
                 <h2 className="card-title">{product_title}</h2>
                 <p>Price:{price}</p>
-                <button className="btn rounded-2xl mx-auto w-40 hover:bg-[#9538E2] hover:text-white">
-                    View Details
-                </button>
+                <Link to={`/gadgets/${product_id}`}>
+                    <button className="btn rounded-2xl mx-auto w-40 hover:bg-[#9538E2] hover:text-white">
+                        View Details
+                    </button>
+                </Link>
             </div>
         </div>
     );

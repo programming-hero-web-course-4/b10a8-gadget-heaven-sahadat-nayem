@@ -8,8 +8,8 @@ import {
 import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
-import Dashbord from './components/Dashbord/Dashbord';
 import Gadget from './components/Gadget/Gadget';
+import GadgetsDetail from './components/GadgetsDetail/GadgetsDetail';
 
 const router = createBrowserRouter([
   {
@@ -35,8 +35,9 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: 'dashbord',
-        element: <Dashbord></Dashbord>,
+        path: 'gadgets/:product_id',
+        element: <GadgetsDetail></GadgetsDetail>,
+        loader: () => fetch('../gadgetsData.json'), 
       },
     ],
   },
