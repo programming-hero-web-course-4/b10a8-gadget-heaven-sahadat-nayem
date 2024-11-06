@@ -1,6 +1,8 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { MdAccountCircle } from "react-icons/md";
+import GadgetsDetail from "../GadgetsDetail/GadgetsDetail";
 
 const NavBar = () => {
 
@@ -8,7 +10,10 @@ const NavBar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/statistics">Statistics</NavLink></li>
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/registration" className="font-bold" ><MdAccountCircle /> Registration</NavLink></li>
+        <li><NavLink to="/extraSection" className="font-bold" >Login</NavLink></li>
     </>
+
 
     return (
         <div className="navbar bg-base-100 max-w-6xl mx-auto">
@@ -42,7 +47,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                <FaShoppingCart />
+                <div><FaShoppingCart /></div>
                 <FaHeart />
             </div>
         </div>

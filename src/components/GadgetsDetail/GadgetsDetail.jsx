@@ -3,6 +3,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { addFavorite} from "../utils/localStroge";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const GadgetsDetail = () => {
@@ -24,10 +26,12 @@ const GadgetsDetail = () => {
     const handleFavorite = gadget =>{
         addFavorite(gadget)
         setIsFavorite(true)
+        toast.success("Item added successfully!");
     }
 
     return (
         <>
+            <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
 
             <div className="text-center bg-[#9538E2] text-white lg:pb-64 pb-32 pt-6">
                 <h2 className="font-bold text-2xl">Product Details</h2>

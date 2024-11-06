@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip,Legend, ResponsiveContainer} from "recharts";
 
 const Statistics = () => {
@@ -19,7 +20,9 @@ const Statistics = () => {
 
     return (
         <>
-
+            <Helmet>
+                <title>Statistics</title>
+            </Helmet>
             <div className="text-center bg-[#9538E2] text-white pb-6 pt-6">
                 <h2 className="font-bold text-2xl">Product Details</h2>
                 <p>Explore the latest gadgets that will take your experience to <br /> the next level. From smart devices to the coolest accessories, we have it all!</p>

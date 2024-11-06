@@ -2,6 +2,7 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     const categories = useLoaderData()
@@ -9,6 +10,7 @@ const Home = () => {
     
     return (
         <div>
+            <Helmet><title>Home</title></Helmet>
             <Banner></Banner>
             <div className="flex max-w-[1240px] mx-auto">
                 <div className="w-1/2 lg:w-1/5">

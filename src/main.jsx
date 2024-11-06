@@ -12,6 +12,9 @@ import Gadget from './components/Gadget/Gadget';
 import GadgetsDetail from './components/GadgetsDetail/GadgetsDetail';
 import Statistics from './components/Statistics/Statistics';
 import Dashboard from './components/Dashboard/Dashboard';
+import ExtraSection from './components/ExtraSection/ExtraSection';
+import Registration from './components/Registration/Registration';
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -51,12 +54,24 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         
       },
+      {
+        path: '/extraSection',
+        element: <ExtraSection></ExtraSection>,
+        
+      },
+      {
+        path: '/registration',
+        element: <Registration></Registration>,
+        
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <HelmetProvider>
     <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>,
 )

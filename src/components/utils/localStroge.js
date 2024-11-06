@@ -26,10 +26,10 @@ const addFavorite = gadget => {
 }
 
 // remove a coffee from local storage
-const removeFavorite = product_id => {
+const removeFavorite = id => {
   // get all previously saved gadget data
   const favorites = getAllFavorites()
-  const remaining = favorites.filter(gadget => gadget.iproduct_idd != product_id)
+  const remaining = favorites.filter(gadget => gadget.product_id != id)
   localStorage.setItem('favorites', JSON.stringify(remaining))
   toast.success('Successfully Removed!')
 }
